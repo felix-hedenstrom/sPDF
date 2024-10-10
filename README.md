@@ -113,7 +113,7 @@ Images, CSS, or JavaScript does not seem to be downloading correctly in the PDF.
 
 ### Asynchronous conversion ###
 
-__sPDF__ relyies on Scala's `scala.sys.process.Process` class to execute `wkhtmltopdf` and pipe input/output data.
+__sPDF__ relies on Scala's `scala.sys.process.Process` class to execute `wkhtmltopdf` and pipe input/output data.
 
 The execution of `wkhtmltopdf` and thus the conversion to PDF is blocking. If you need the processing to be asynchronous you can wrap the call inside a `Future`.
 
